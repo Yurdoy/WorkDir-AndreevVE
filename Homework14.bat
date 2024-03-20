@@ -1,11 +1,11 @@
 #!/bin/bash
  
-print_date() { date +'%H:%M:%S'
+currentime() { date +'%H:%M:%S'
 }
  
 for ((i=1; i<=10; i++)); do
  
-    echo "$(print_date) $(ps -ef | wc -l)"
+    echo "$(currentime) $(ps -ef | wc -l)"
  
     #sleep 5
 done
